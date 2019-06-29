@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: locadora-api
+  jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL8Dialect
+      hibernate:
+        ddl-auto: create-drop
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  datasource:
+      url: jdbc:mysql://localhost:3306/locadora_db?useLegacyDatetimeCode=false&serverTimezone=UTC
+      username: root
+      password: root
+  
+server:
+   port: 8080
+   servlet:
+     context-path: /locadora
+     
+jwt:
+   time:      
+     expiration: 3600000
+   token:
+     secret: MySecret
