@@ -43,7 +43,7 @@ INSERT INTO `locadora_db`.`movies`(`director_name`,`number_of_copies_available`,
 INSERT INTO `locadora_db`.`movies`(`director_name`,`number_of_copies_available`,`number_of_copies_max`,`title`) VALUES('Richard Marquand',7,7,'Return of the Jedi : Episode VI');  
 ```
   
-6.**REST APIs**
+6. **REST APIs**
 
 In this application, we will expose REST APIs for vehicle resources.
 
